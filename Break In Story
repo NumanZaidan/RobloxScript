@@ -1,0 +1,3 @@
+--by FoxyKing#8570
+
+loadstring(game:HttpGet('https://gist.githubusercontent.com/NumanZaidan/6368ec43473cc22ee58a09854c12ee46/raw/4551e76d77e8f9958bfa0e545f0e0aabf61203da/Break_In_Story_Roblox_Script'))()
