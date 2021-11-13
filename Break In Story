@@ -1,3 +1,602 @@
 --by FoxyKing#8570
+-- Instances:
 
-loadstring(game:HttpGet('https://gist.githubusercontent.com/NumanZaidan/6368ec43473cc22ee58a09854c12ee46/raw/4551e76d77e8f9958bfa0e545f0e0aabf61203da/Break_In_Story_Roblox_Script'))()
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Owner = Instance.new("TextLabel")
+local OpenSafe = Instance.new("TextButton")
+local GiveItems = Instance.new("TextLabel")
+local Chips = Instance.new("TextButton")
+local Lollipop = Instance.new("TextButton")
+local Cola = Instance.new("TextButton")
+local Apple = Instance.new("TextButton")
+local Bat = Instance.new("TextButton")
+local MedKit = Instance.new("TextButton")
+local PosionPizza = Instance.new("TextButton")
+local Cookie = Instance.new("TextButton")
+local Pizza = Instance.new("TextButton")
+local Key = Instance.new("TextButton")
+local Plank = Instance.new("TextButton")
+local Cure = Instance.new("TextButton")
+local Hammer = Instance.new("TextButton")
+local Teddy = Instance.new("TextButton")
+local Sword = Instance.new("TextButton")
+local Teleports = Instance.new("TextLabel")
+local Sewer = Instance.new("TextButton")
+local Store = Instance.new("TextButton")
+local Basement = Instance.new("TextButton")
+local Attic = Instance.new("TextButton")
+local House = Instance.new("TextButton")
+local BossRoom = Instance.new("TextButton")
+local Roles = Instance.new("TextLabel")
+local Police = Instance.new("TextButton")
+local Swat = Instance.new("TextButton")
+local Remotes = Instance.new("TextLabel")
+local ToolDrop = Instance.new("TextButton")
+local Cat = Instance.new("TextButton")
+local RemoveTools = Instance.new("TextButton")
+local Heal = Instance.new("TextButton")
+local KillEnemies = Instance.new("TextButton")
+local Open = Instance.new("Frame")
+local Open_2 = Instance.new("TextButton")
+local Close = Instance.new("Frame")
+local Close_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.398606807, 0, 0.0631970242, 0)
+Main.Size = UDim2.new(0, 355, 0, 450)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+Owner.Name = "Owner"
+Owner.Parent = Main
+Owner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Owner.Size = UDim2.new(0, 355, 0, 27)
+Owner.Font = Enum.Font.SourceSans
+Owner.Text = "GUI: FoxyKing#8570"
+Owner.TextColor3 = Color3.fromRGB(0, 0, 0)
+Owner.TextSize = 14.000
+
+OpenSafe.Name = "OpenSafe"
+OpenSafe.Parent = Main
+OpenSafe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenSafe.Position = UDim2.new(0.549212039, 0, 0.918778062, 0)
+OpenSafe.Size = UDim2.new(0, 79, 0, 25)
+OpenSafe.Font = Enum.Font.SourceSans
+OpenSafe.Text = "OpenSafe"
+OpenSafe.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenSafe.TextSize = 14.000
+
+GiveItems.Name = "Give Items"
+GiveItems.Parent = Main
+GiveItems.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GiveItems.Position = UDim2.new(0.172300473, 0, 0.0758266449, 0)
+GiveItems.Size = UDim2.new(0, 200, 0, 33)
+GiveItems.Font = Enum.Font.SourceSans
+GiveItems.Text = "Give Items"
+GiveItems.TextColor3 = Color3.fromRGB(0, 0, 0)
+GiveItems.TextScaled = true
+GiveItems.TextSize = 14.000
+GiveItems.TextWrapped = true
+
+Chips.Name = "Chips"
+Chips.Parent = Main
+Chips.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Chips.Position = UDim2.new(0.0264247637, 0, 0.160991326, 0)
+Chips.Size = UDim2.new(0, 66, 0, 24)
+Chips.Font = Enum.Font.SourceSans
+Chips.Text = "Chips"
+Chips.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chips.TextSize = 14.000
+
+Lollipop.Name = "Lollipop"
+Lollipop.Parent = Main
+Lollipop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lollipop.Position = UDim2.new(0.760597825, 0, 0.0747483894, 0)
+Lollipop.Size = UDim2.new(0, 66, 0, 24)
+Lollipop.Font = Enum.Font.SourceSans
+Lollipop.Text = "Lollipop"
+Lollipop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lollipop.TextSize = 14.000
+
+Cola.Name = "Cola"
+Cola.Parent = Main
+Cola.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cola.Position = UDim2.new(0.23832795, 0, 0.162996739, 0)
+Cola.Size = UDim2.new(0, 66, 0, 24)
+Cola.Font = Enum.Font.SourceSans
+Cola.Text = "Cola"
+Cola.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cola.TextSize = 14.000
+
+Apple.Name = "Apple"
+Apple.Parent = Main
+Apple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Apple.Position = UDim2.new(0.709589422, 0, 0.162996739, 0)
+Apple.Size = UDim2.new(0, 62, 0, 24)
+Apple.Font = Enum.Font.SourceSans
+Apple.Text = "Apple"
+Apple.TextColor3 = Color3.fromRGB(0, 0, 0)
+Apple.TextSize = 14.000
+
+Bat.Name = "Bat"
+Bat.Parent = Main
+Bat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bat.Position = UDim2.new(0.470706999, 0, 0.162996739, 0)
+Bat.Size = UDim2.new(0, 66, 0, 24)
+Bat.Font = Enum.Font.SourceSans
+Bat.Text = "Bat"
+Bat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bat.TextSize = 14.000
+
+MedKit.Name = "MedKit"
+MedKit.Parent = Main
+MedKit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MedKit.Position = UDim2.new(0.0264247637, 0, 0.233377188, 0)
+MedKit.Size = UDim2.new(0, 66, 0, 24)
+MedKit.Font = Enum.Font.SourceSans
+MedKit.Text = "MedKit"
+MedKit.TextColor3 = Color3.fromRGB(0, 0, 0)
+MedKit.TextSize = 14.000
+
+PosionPizza.Name = "PosionPizza"
+PosionPizza.Parent = Main
+PosionPizza.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PosionPizza.Position = UDim2.new(0.708540261, 0, 0.233377188, 0)
+PosionPizza.Size = UDim2.new(0, 66, 0, 24)
+PosionPizza.Font = Enum.Font.SourceSans
+PosionPizza.Text = "PosionPizza"
+PosionPizza.TextColor3 = Color3.fromRGB(0, 0, 0)
+PosionPizza.TextSize = 14.000
+
+Cookie.Name = "Cookie"
+Cookie.Parent = Main
+Cookie.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cookie.Position = UDim2.new(0.469845951, 0, 0.233377188, 0)
+Cookie.Size = UDim2.new(0, 66, 0, 24)
+Cookie.Font = Enum.Font.SourceSans
+Cookie.Text = "Cookie"
+Cookie.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cookie.TextSize = 14.000
+
+Pizza.Name = "Pizza"
+Pizza.Parent = Main
+Pizza.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pizza.Position = UDim2.new(0.250437468, 0, 0.233377188, 0)
+Pizza.Size = UDim2.new(0, 66, 0, 24)
+Pizza.Font = Enum.Font.SourceSans
+Pizza.Text = "Pizza"
+Pizza.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pizza.TextSize = 14.000
+
+Key.Name = "Key"
+Key.Parent = Main
+Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Key.Position = UDim2.new(0.0264246091, 0, 0.311832517, 0)
+Key.Size = UDim2.new(0, 46, 0, 23)
+Key.Font = Enum.Font.SourceSans
+Key.Text = "Key"
+Key.TextColor3 = Color3.fromRGB(0, 0, 0)
+Key.TextSize = 14.000
+
+Plank.Name = "Plank"
+Plank.Parent = Main
+Plank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Plank.Position = UDim2.new(0.8423962, 0, 0.311726481, 0)
+Plank.Size = UDim2.new(0, 55, 0, 23)
+Plank.Font = Enum.Font.SourceSans
+Plank.Text = "Plank"
+Plank.TextColor3 = Color3.fromRGB(0, 0, 0)
+Plank.TextSize = 14.000
+
+Cure.Name = "Cure"
+Cure.Parent = Main
+Cure.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cure.Position = UDim2.new(0.687438846, 0, 0.311832517, 0)
+Cure.Size = UDim2.new(0, 48, 0, 23)
+Cure.Font = Enum.Font.SourceSans
+Cure.Text = "Cure"
+Cure.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cure.TextSize = 14.000
+
+Hammer.Name = "Hammer"
+Hammer.Parent = Main
+Hammer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hammer.Position = UDim2.new(0.532277405, 0, 0.311832517, 0)
+Hammer.Size = UDim2.new(0, 44, 0, 23)
+Hammer.Font = Enum.Font.SourceSans
+Hammer.Text = "Hammer"
+Hammer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hammer.TextSize = 14.000
+
+Teddy.Name = "Teddy"
+Teddy.Parent = Main
+Teddy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teddy.Position = UDim2.new(0.349198461, 0, 0.311832517, 0)
+Teddy.Size = UDim2.new(0, 54, 0, 23)
+Teddy.Font = Enum.Font.SourceSans
+Teddy.Text = "Teddy"
+Teddy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teddy.TextSize = 14.000
+
+Sword.Name = "Sword"
+Sword.Parent = Main
+Sword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sword.Position = UDim2.new(0.185160562, 0, 0.309610307, 0)
+Sword.Size = UDim2.new(0, 52, 0, 23)
+Sword.Font = Enum.Font.SourceSans
+Sword.Text = "Sword"
+Sword.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sword.TextSize = 14.000
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Main
+Teleports.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.Position = UDim2.new(0.261971831, 0, 0.379539907, 0)
+Teleports.Size = UDim2.new(0, 168, 0, 29)
+Teleports.Font = Enum.Font.SourceSans
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleports.TextScaled = true
+Teleports.TextSize = 14.000
+Teleports.TextWrapped = true
+
+Sewer.Name = "Sewer"
+Sewer.Parent = Main
+Sewer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sewer.Position = UDim2.new(0.236619726, 0, 0.551026821, 0)
+Sewer.Size = UDim2.new(0, 74, 0, 27)
+Sewer.Font = Enum.Font.SourceSans
+Sewer.Text = "Sewer"
+Sewer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sewer.TextSize = 14.000
+
+Store.Name = "Store"
+Store.Parent = Main
+Store.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Store.Position = UDim2.new(0.791549325, 0, 0.468014032, 0)
+Store.Size = UDim2.new(0, 74, 0, 27)
+Store.Font = Enum.Font.SourceSans
+Store.Text = "Store"
+Store.TextColor3 = Color3.fromRGB(0, 0, 0)
+Store.TextSize = 14.000
+
+Basement.Name = "Basement"
+Basement.Parent = Main
+Basement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Basement.Position = UDim2.new(0.0535211265, 0, 0.468081206, 0)
+Basement.Size = UDim2.new(0, 74, 0, 27)
+Basement.Font = Enum.Font.SourceSans
+Basement.Text = "Basement"
+Basement.TextColor3 = Color3.fromRGB(0, 0, 0)
+Basement.TextSize = 14.000
+
+Attic.Name = "Attic"
+Attic.Parent = Main
+Attic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Attic.Position = UDim2.new(0.529577494, 0, 0.468081206, 0)
+Attic.Size = UDim2.new(0, 74, 0, 27)
+Attic.Font = Enum.Font.SourceSans
+Attic.Text = "Attic"
+Attic.TextColor3 = Color3.fromRGB(0, 0, 0)
+Attic.TextSize = 14.000
+
+House.Name = "House"
+House.Parent = Main
+House.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+House.Position = UDim2.new(0.292957723, 0, 0.468081206, 0)
+House.Size = UDim2.new(0, 74, 0, 27)
+House.Font = Enum.Font.SourceSans
+House.Text = "House"
+House.TextColor3 = Color3.fromRGB(0, 0, 0)
+House.TextSize = 14.000
+
+BossRoom.Name = "BossRoom"
+BossRoom.Parent = Main
+BossRoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BossRoom.Position = UDim2.new(0.58309859, 0, 0.551176369, 0)
+BossRoom.Size = UDim2.new(0, 74, 0, 27)
+BossRoom.Font = Enum.Font.SourceSans
+BossRoom.Text = "BossRoom"
+BossRoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+BossRoom.TextSize = 14.000
+
+Roles.Name = "Roles"
+Roles.Parent = Main
+Roles.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roles.Position = UDim2.new(0.292957753, 0, 0.631382108, 0)
+Roles.Size = UDim2.new(0, 156, 0, 28)
+Roles.Font = Enum.Font.SourceSans
+Roles.Text = "Roles"
+Roles.TextColor3 = Color3.fromRGB(0, 0, 0)
+Roles.TextScaled = true
+Roles.TextSize = 14.000
+Roles.TextWrapped = true
+
+Police.Name = "Police"
+Police.Parent = Main
+Police.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Police.Position = UDim2.new(0.125016153, 0, 0.718753397, 0)
+Police.Size = UDim2.new(0, 94, 0, 25)
+Police.Font = Enum.Font.SourceSans
+Police.Text = "Police"
+Police.TextColor3 = Color3.fromRGB(0, 0, 0)
+Police.TextScaled = true
+Police.TextSize = 14.000
+Police.TextWrapped = true
+
+Swat.Name = "Swat"
+Swat.Parent = Main
+Swat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Swat.Position = UDim2.new(0.57572037, 0, 0.718753397, 0)
+Swat.Size = UDim2.new(0, 94, 0, 25)
+Swat.Font = Enum.Font.SourceSans
+Swat.Text = "Swat"
+Swat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Swat.TextScaled = true
+Swat.TextSize = 14.000
+Swat.TextWrapped = true
+
+Remotes.Name = "Remotes"
+Remotes.Parent = Main
+Remotes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Remotes.Position = UDim2.new(0.267605633, 0, 0.790476203, 0)
+Remotes.Size = UDim2.new(0, 175, 0, 25)
+Remotes.Font = Enum.Font.SourceSans
+Remotes.Text = "Remotes"
+Remotes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Remotes.TextScaled = true
+Remotes.TextSize = 14.000
+Remotes.TextWrapped = true
+
+ToolDrop.Name = "ToolDrop"
+ToolDrop.Parent = Main
+ToolDrop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToolDrop.Position = UDim2.new(0.236535922, 0, 0.918778062, 0)
+ToolDrop.Size = UDim2.new(0, 79, 0, 25)
+ToolDrop.Font = Enum.Font.SourceSans
+ToolDrop.Text = "ToolDrop"
+ToolDrop.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToolDrop.TextSize = 14.000
+
+Cat.Name = "Cat"
+Cat.Parent = Main
+Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cat.Position = UDim2.new(0.0140007064, 0, 0.845444679, 0)
+Cat.Size = UDim2.new(0, 79, 0, 25)
+Cat.Font = Enum.Font.SourceSans
+Cat.Text = "Cat"
+Cat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cat.TextSize = 14.000
+
+RemoveTools.Name = "RemoveTools"
+RemoveTools.Parent = Main
+RemoveTools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoveTools.Position = UDim2.new(0.774564087, 0, 0.845444679, 0)
+RemoveTools.Size = UDim2.new(0, 79, 0, 25)
+RemoveTools.Font = Enum.Font.SourceSans
+RemoveTools.Text = "RemoveTools"
+RemoveTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveTools.TextSize = 14.000
+
+Heal.Name = "Heal"
+Heal.Parent = Main
+Heal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Heal.Position = UDim2.new(0.52949363, 0, 0.845444679, 0)
+Heal.Size = UDim2.new(0, 79, 0, 25)
+Heal.Font = Enum.Font.SourceSans
+Heal.Text = "Heal"
+Heal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Heal.TextSize = 14.000
+
+KillEnemies.Name = "KillEnemies"
+KillEnemies.Parent = Main
+KillEnemies.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillEnemies.Position = UDim2.new(0.267521858, 0, 0.845444679, 0)
+KillEnemies.Size = UDim2.new(0, 79, 0, 25)
+KillEnemies.Font = Enum.Font.SourceSans
+KillEnemies.Text = "KillEnemies"
+KillEnemies.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillEnemies.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.900928795, 0, 0.44857499, 0)
+Open.Size = UDim2.new(0, 95, 0, 26)
+
+Open_2.Name = "Open_2"
+Open_2.Parent = Open
+Open_2.BackgroundColor3 = Color3.fromRGB(110, 255, 0)
+Open_2.Position = UDim2.new(0.0395054817, 0, -0.0163354874, 0)
+Open_2.Size = UDim2.new(0, 91, 0, 26)
+Open_2.Font = Enum.Font.SourceSans
+Open_2.Text = "Open"
+Open_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open_2.TextSize = 14.000
+Open_2.MouseButton1Down:connect(function()
+	Open.Visible = false
+	Main.Visible = true
+	Close.Visible = true
+end)
+
+
+Close.Name = "Close"
+Close.Parent = ScreenGui
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.900928795, 0, 0.493184686, 0)
+Close.Size = UDim2.new(0, 87, 0, 26)
+Close.Visible = false
+
+Close_2.Name = "Close_2"
+Close_2.Parent = Close
+Close_2.BackgroundColor3 = Color3.fromRGB(0, 255, 17)
+Close_2.Position = UDim2.new(0, 0, 0.035883978, 0)
+Close_2.Size = UDim2.new(0, 85, 0, 24)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "Close"
+Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.TextSize = 14.000
+Close_2.MouseButton1Down:connect(function()
+	Open.Visible = true
+	Main.Visible = false
+	Close.Visible = false
+end)
+
+--Script GUI:FoxyKing#8570:
+Chips.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Chips")
+end)
+
+Cola.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("BloxyCola")
+end)
+
+Police.MouseButton1Down:connect(function()
+	local A_1 = "Gun"
+	local A_2 = true
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+	Event:FireServer(A_1, A_2)
+end)
+
+Swat.MouseButton1Down:connect(function()
+	local A_1 = "SwatGun"
+	local A_2 = true
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole
+	Event:FireServer(A_1, A_2)
+end)
+
+Bat.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Bat")
+end)
+
+Apple.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Apple")
+end)
+
+MedKit.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("MedKit")
+end)
+
+Pizza.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Pizza2")
+end)
+
+Cookie.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Cookie")
+end)
+
+PosionPizza.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("EpicPizza")
+end)
+
+Key.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Key")
+end)
+
+Teddy.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("TeddyBloxpin")
+end)
+
+Sword.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("LinkedSword")
+end)
+
+Basement.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71, -15, -163)
+end)
+
+House.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36, 3, -200)
+end)
+
+Attic.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16, 35, -220)
+end)
+
+Store.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-422, 3, -121)
+end)
+
+Sewer.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(129, 3, -125)
+end)
+
+BossRoom.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-39, -287, -1480)
+end)
+
+ Cat.MouseButton1Down:connect(function()
+	local Target = game:GetService("ReplicatedStorage").RemoteEvents.Cattery;
+	Target:FireServer();
+end)
+
+KillEnemies.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Workspace.BadGuys:GetChildren()) do
+		for i = 1, 50 do
+			game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,10)
+			game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,996)
+			game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,9)
+			game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,8)
+			game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,996)
+		end
+	end
+end)
+
+Heal.MouseButton1Down:connect(function()
+	for i = 1, 200 do
+		wait(0.0001)
+		local A_1 = "Cat"
+		local Event = game:GetService("ReplicatedStorage").RemoteEvents.Energy
+		Event:FireServer(A_1)
+	end
+end)
+
+RemoveTools.MouseButton1Down:connect(function()
+	for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+		if v:IsA("Tool") then
+			v:Destroy()
+		end
+	end
+end)
+
+ToolDrop.MouseButton1Down:connect(function()
+	while wait(1) do
+		for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				v.CanBeDropped = true
+			end
+		end
+	end
+end)
+
+OpenSafe.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.Safe:FireServer(game:GetService("Workspace").CodeNote.SurfaceGui.TextLabel.Text)
+end)
+
+Cure.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Cure")
+end)
+
+Hammer.MouseButton1Down:connect(function()
+	local A_1 = true
+	local A_2 = "Hammer"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.BasementWeapon
+	Event:FireServer(A_1, A_2)
+end)
+
+Plank.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Plank")
+end)
+
+Lollipop.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Lollipop")
+end)
+--Script GUI:FoxyKing#8570:
