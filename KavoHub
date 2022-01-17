@@ -1,0 +1,37 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Kavo Hub", "Sentinel")
+
+-- Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Coming Soon!")
+
+-- Game Script
+local GameScript = Window:NewTab("Game Script")
+local GameScriptSection = GameScript:NewSection("Game Script")
+GameScriptSection:NewButton("Build A Boat For Treasure", "Build A Boat For Treasure Script", function()
+    if game.PlaceId == 537413528 then
+        print("Clicked")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+    end
+end)
+GameScriptSection:NewButton("Funky Friday", "Officially supported: Synapse X, Script-Ware, KRNL.", function()
+    if game.PlaceId == 6447798030 then
+        print("Clicked")
+        --// Script May Update tho
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+    end
+end)
+
+-- PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("WalkSpeed", "Changes The WalkSpeed", 250, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+PlayerSection:NewSlider("JumpPower", "Changes the JumpPower", 100, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+PlayerSection:NewButton("Tp Tools", "Gives u Tp Tools!", function()
+    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/Click%20TP%20Tool.lua"))()
+end)
