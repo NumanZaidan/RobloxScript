@@ -1,3 +1,8 @@
+-- What New.
+-- Added Another Script Hub.
+
+wait("0.5")
+print("Script Loaded")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Kavo Hub", "Sentinel")
 
@@ -35,3 +40,21 @@ PlayerSection:NewButton("Tp Tools", "Gives u Tp Tools!", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/Click%20TP%20Tool.lua"))()
 end)
+
+--Another Script Hub
+local AnotherScriptHub = Window:NewTab("Another Script Hub")
+local AnotherScriptHubSection = AnotherScriptHub:NewSection("Another Script Hub")
+AnotherScriptHubSection:NewButton("Infinite Yield", "Infinite Yield Admin", function()
+    print("Loaded, Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+AnotherScriptHubSection:NewButton("Ez Hub", "Ez Hub", function()
+    print("Loaded, Clicked")
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+-- Credits
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+CreditsSection:NewLabel("Script Was Made By jhrjjrjh0991")
