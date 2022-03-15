@@ -1,0 +1,203 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Piggy = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local ItemTp = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local VynixiusPiggy = Instance.new("TextButton")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local ComingSoon = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_6 = Instance.new("UICorner")
+local Titile = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local UICorner_7 = Instance.new("UICorner")
+local Title1 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+
+--Properties:
+
+Piggy.Name = "Piggy"
+Piggy.Parent = game.CoreGui
+
+Open.Name = "Open"
+Open.Parent = Piggy
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0.457358509, 0, 0.0468982868, 0)
+Open.Size = UDim2.new(0, 78, 0, 27)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(28, 218, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 148, 255))}
+UIGradient.Parent = Open
+
+UICorner.Parent = Open
+
+Main.Name = "Main"
+Main.Parent = Piggy
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.321509451, 0, 0.308980227, 0)
+Main.Size = UDim2.new(0, 472, 0, 282)
+Main.Visible = false
+Main.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.940711915, 0, 0, 0)
+Close.Size = UDim2.new(0, 27, 0, 25)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_2.Parent = Close
+
+UICorner_2.Parent = Close
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(28, 218, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 148, 255))}
+UIGradient_3.Parent = Main
+
+UICorner_3.Parent = Main
+
+ItemTp.Name = "ItemTp"
+ItemTp.Parent = Main
+ItemTp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemTp.Position = UDim2.new(0.0272146966, 0, 0.291323513, 0)
+ItemTp.Size = UDim2.new(0, 200, 0, 52)
+ItemTp.Font = Enum.Font.SourceSans
+ItemTp.Text = "ItemTp Gui (Krnl, Synapse Supported)"
+ItemTp.TextColor3 = Color3.fromRGB(0, 0, 0)
+ItemTp.TextScaled = true
+ItemTp.TextSize = 14.000
+ItemTp.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_4.Parent = ItemTp
+
+UICorner_4.Parent = ItemTp
+
+VynixiusPiggy.Name = "Vynixius-Piggy"
+VynixiusPiggy.Parent = Main
+VynixiusPiggy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VynixiusPiggy.Position = UDim2.new(0.480604529, 0, 0.287777394, 0)
+VynixiusPiggy.Size = UDim2.new(0, 200, 0, 53)
+VynixiusPiggy.Font = Enum.Font.SourceSans
+VynixiusPiggy.Text = "Vynixius-Piggy Gui (Krnl, Synapse Supported)"
+VynixiusPiggy.TextColor3 = Color3.fromRGB(0, 0, 0)
+VynixiusPiggy.TextScaled = true
+VynixiusPiggy.TextSize = 14.000
+VynixiusPiggy.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_5.Parent = VynixiusPiggy
+
+UICorner_5.Parent = VynixiusPiggy
+
+ComingSoon.Name = "ComingSoon"
+ComingSoon.Parent = Main
+ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ComingSoon.Position = UDim2.new(0.0275423732, 0, 0.510638297, 0)
+ComingSoon.Size = UDim2.new(0, 413, 0, 116)
+ComingSoon.Font = Enum.Font.SourceSans
+ComingSoon.Text = "More Coming Soon!"
+ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_6.Parent = ComingSoon
+
+UICorner_6.Parent = ComingSoon
+
+Titile.Name = "Titile"
+Titile.Parent = Main
+Titile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Titile.Size = UDim2.new(0, 438, 0, 25)
+Titile.Font = Enum.Font.SourceSans
+Titile.Text = "Piggy Gui - 2V"
+Titile.TextColor3 = Color3.fromRGB(0, 0, 0)
+Titile.TextScaled = true
+Titile.TextSize = 14.000
+Titile.TextWrapped = true
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_7.Parent = Titile
+
+UICorner_7.Parent = Titile
+
+Title1.Name = "Title1"
+Title1.Parent = Main
+Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title1.Position = UDim2.new(0.0272146966, 0, 0.109929077, 0)
+Title1.Size = UDim2.new(0, 413, 0, 39)
+Title1.Font = Enum.Font.SourceSans
+Title1.Text = "Pick Script!"
+Title1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title1.TextScaled = true
+Title1.TextSize = 14.000
+Title1.TextWrapped = true
+
+UICorner_8.Parent = Title1
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 196, 19)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 255, 12))}
+UIGradient_8.Parent = Title1
+
+-- Scripts:
+
+local function ECCNPDM_fake_script() -- Open.OpenLocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ECCNPDM_fake_script)()
+local function KRBYV_fake_script() -- Close.CloseLocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Open.Visible = true
+	end)
+end
+coroutine.wrap(KRBYV_fake_script)()
+local function EAFA_fake_script() -- ItemTp.LocalScript 
+	local script = Instance.new('LocalScript', ItemTp)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/NumanZaidan/RobloxScript/main/Piggy%20Item%20Teleport%20Script'))()
+	end)
+end
+coroutine.wrap(EAFA_fake_script)()
+local function CCYWETL_fake_script() -- VynixiusPiggy.LocalScript 
+	local script = Instance.new('LocalScript', VynixiusPiggy)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Piggy'))()
+	end)
+end
+coroutine.wrap(CCYWETL_fake_script)()
