@@ -1,19 +1,30 @@
+-- 0,1599,0,400
+--[[Credits to the Owner :)]]--
+ 
 local PiggyGui = Instance.new("ScreenGui")
 PiggyGui.Name = "PiggyGui"
 PiggyGui.Parent = game.StarterGui
+ 
 local ScrollingFrame = Instance.new("ScrollingFrame", PiggyGui)
 ScrollingFrame.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
-ScrollingFrame.Position = UDim2.new(0.08, 0, 0.42, 0)
+ScrollingFrame.Position = UDim2.new(0,1599,0,400)
 ScrollingFrame.Size = UDim2.new(0, 296, 0, 388)
+ 
+ 
+ 
+ 
 local PiggyGui = Instance.new("ScreenGui")
 PiggyGui.Name = "PiggyGui"
 PiggyGui.Parent = game.CoreGui
+ 
 local ScrollingFrame = Instance.new("ScrollingFrame", PiggyGui)
 ScrollingFrame.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
-ScrollingFrame.Position = UDim2.new(0.08, 0, 0.42, 0)
+ScrollingFrame.Position = UDim2.new(0,1599,0,400)
 ScrollingFrame.Size = UDim2.new(0, 296, 0, 388)
+ 
 local UIGridLayout = Instance.new("UIGridLayout", ScrollingFrame)
 UIGridLayout.CellSize = UDim2.new(0,90,0,90)
+ 
 while wait(1) do
 local a = workspace:getDescendants()
 local items = {}
@@ -49,6 +60,7 @@ local objectPosition = object.Position
 local cameraPosition = objectPosition + Vector3.new(0,3,0)
 cam.CoordinateFrame = CFrame.new(cameraPosition, objectPosition)
 View.CurrentCamera = cam
+ 
 ItemFrame.MouseButton1Down:connect(function()
 if items[i]:findFirstChild("ClickDetector") then
 local cpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
